@@ -1,0 +1,94 @@
+/* Thiết lập chung: Xóa khoảng cách mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 1. Style cho Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between; /* Đẩy Logo sang trái, Menu sang phải */
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #4CAF50; /* Đổi màu khi di chuột vào */
+}
+
+/* 2. Style cho Banner (Hero) */
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hero button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background-color: #45a049;
+}
+
+/* 3. Style cho Nội dung chính */
+.container {
+    display: flex; /* Dàn hàng ngang */
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap; /* Tự xuống dòng nếu màn hình nhỏ */
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* 4. Style cho Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
